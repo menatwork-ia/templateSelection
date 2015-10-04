@@ -1,5 +1,5 @@
 {
-	"name":"menatwork/templateSelection",
+	"name":"menatwork/contao-templateselection",
 	"description":"Change the template depending on the user agent",
 	"keywords":["template","agent"],
 	"type":"contao-module",
