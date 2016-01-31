@@ -12,10 +12,12 @@
  * @license    LGPL-3.0+
  */
 
+namespace TemplateSelection;
+
 /**
  * Class templateSelection
  */
-class TemplateSelection extends Frontend
+class TemplateSelection extends \Frontend
 {
 
     protected static $arrThemeCache = array();
@@ -97,7 +99,7 @@ class TemplateSelection extends Frontend
                 switch ($strConfig)
                 {
                     case 'ts_client_os':
-                        $blnPermisson = ($blnPermisson && AgentSelection::checkOsPermission($mixedConfig, $objUa));
+                        $blnPermisson = ($blnPermisson && \AgentSelection::checkOsPermission($mixedConfig, $objUa));
                         break;
 
                     case 'ts_client_browser':
@@ -105,7 +107,7 @@ class TemplateSelection extends Frontend
                         break;
 
                     case 'ts_client_browser_version':
-                        $blnPermisson = ($blnPermisson && AgentSelection::checkBrowserVerPermission($mixedConfig, $objUa, $arrSelector['ts_client_browser_operation']));
+                        $blnPermisson = ($blnPermisson && \AgentSelection::checkBrowserVerPermission($mixedConfig, $objUa, $arrSelector['ts_client_browser_operation']));
                         break;
 
                     case 'ts_client_is_mobile':

@@ -12,6 +12,6 @@
  * @license    LGPL-3.0+
  */
 
-$GLOBALS['TL_HOOKS']['parseTemplate'][] = array('TemplateSelection', 'changeTemplate');
+$GLOBALS['TL_HOOKS']['parseTemplate'][] = array('TemplateSelection\TemplateSelection', 'changeTemplate');
 
 ?>
