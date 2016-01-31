@@ -188,7 +188,7 @@ class TemplateSelection extends \Frontend
      *
      * @param Database_Result $objPage
      */
-    public function inheritSelection(Database_Result $objPage)
+    public function inheritSelection($objPage)
     {
 
         if ($objPage->ts_include_selection)
